@@ -7,17 +7,22 @@ WINNERS = { "rock" => ["scissors", "lizard"], "paper" => ["rock", "spock"],
             "scissors" => ["paper", "lizard"], "lizard" => ["spock", "paper"],
             "spock" => ["rock", "scissors"] }
 
-WINNING_MESSAGES = { "scissorspaper" => "Scissors cuts paper!", "paperrock" => "Paper covers rock!",
-                      "rocklizard" => "Rock crushes lizard!", "lizardspock" => "Lizard poisons Spock!",
-                      "spockscissors" => "Spock smashes scissors", "scissorslizard" => "Scissors decapitates lizard!",
-                      "lizardpaper" => "Lizard eats paper!", "paperspock" => "Paper disproves Spock!",
-                      "spockrock" => "Spock vapourises rock!", "rockscissors" => "Rock crushes scissors" }
+WINNING_MESSAGES = { "scissorspaper" => "Scissors cuts paper!",
+                     "paperrock" => "Paper covers rock!",
+                     "rocklizard" => "Rock crushes lizard!",
+                     "lizardspock" => "Lizard poisons Spock!",
+                     "spockscissors" => "Spock smashes scissors",
+                     "scissorslizard" => "Scissors decapitates lizard!",
+                     "lizardpaper" => "Lizard eats paper!",
+                     "paperspock" => "Paper disproves Spock!",
+                     "spockrock" => "Spock vapourises rock!",
+                     "rockscissors" => "Rock crushes scissors" }
 
 def prompt(message)
   puts "=> #{message}"
 end
 
-def win?(player, computer) 
+def win?(player, computer)
   if player == computer
     "tie"
   elsif WINNERS[player].include?(computer)
