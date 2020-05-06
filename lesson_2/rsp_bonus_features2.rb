@@ -28,9 +28,9 @@ end
 
 def display_results(winner)
   case winner
-  when "tie" then "It's a tie"
-  when "player" then "You won!"
-  when "computer" then "Computer won!"
+  when "tie" then MESSAGES['tie']
+  when "player" then MESSAGES['player_wins']
+  when "computer" then MESSAGES['computer_wins']
   end
 end
 
@@ -44,9 +44,9 @@ end
 
 def display_grand_winner(player_score, computer_score)
   if player_score == WIN_SCORE
-    return "You're the grand winner!"
+    return MESSAGES['player_grand_winner']
   elsif computer_score == WIN_SCORE
-    return "The computer is the grand winner!"
+    return MESSAGES['computer_grand_winner']
   end
   nil
 end
