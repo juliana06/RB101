@@ -31,13 +31,13 @@ def operation_to_message(op)
   operation
 end
 
-prompt(MESSAGES['welcome'])
+prompt(MESSAGES['en']['welcome'])
 
 name = ""
 loop do
   name = gets.chomp
   if name.empty?
-    prompt(MESSAGES['invalid_name'])
+    prompt(MESSAGES['en']['invalid_name'])
   else
     break
   end
@@ -48,25 +48,25 @@ prompt("Hello #{name}!")
 loop do # main loop
   num1 = ""
   loop do
-    prompt(MESSAGES['first_number'])
+    prompt(MESSAGES['en']['first_number'])
     num1 = gets.chomp
 
     if valid_number?(num1)
       break
     else
-      prompt(MESSAGES['invalid_number'])
+      prompt(MESSAGES['en']['invalid_number'])
     end
   end
 
   num2 = ""
   loop do
-    prompt(MESSAGES['second_number'])
+    prompt(MESSAGES['en']['second_number'])
     num2 = gets.chomp
 
     if valid_number?(num2)
       break
     else
-      prompt(MESSAGES['invalid_number'])
+      prompt(MESSAGES['en']['invalid_number'])
     end
   end
 
@@ -78,7 +78,7 @@ loop do # main loop
   #   Divide
   # MSG
 
-  prompt(MESSAGES['operation'])
+  prompt(MESSAGES['en']['operation'])
   operation = ""
   loop do
     operation = gets.chomp.downcase
@@ -86,7 +86,7 @@ loop do # main loop
     if %w(add subtract multiply divide).include?(operation)
       break
     else
-      prompt(MESSAGES['invalid_operation'])
+      prompt(MESSAGES['en']['invalid_operation'])
     end
   end
 
@@ -105,9 +105,10 @@ loop do # main loop
 
   prompt("The result is #{result}")
 
-  prompt(MESSAGES['more_calculation'])
+  prompt(MESSAGES['en']['more_calculation'])
   answer = gets.chomp
   break unless answer.downcase.start_with?('y')
+  system("clear") || system("cls")
 end
 
-prompt(MESSAGES['good_bye'])
+prompt(MESSAGES['en']['good_bye'])

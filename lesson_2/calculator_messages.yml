@@ -1,13 +1,29 @@
-welcome: "Welcome to Calculator! Please enter your name: "
-invalid_name: "Make sure to use a valid name."
-first_number: "What's the first number? "
-second_number: "What is the second number? "
-invalid_number: "Hmm... that doesn't look like a valid number"
-operation: "What operation would you like to perform?
-    Add
-    Subtract
-    Multiply
-    Divide"
-invalid_operation: "You must choose add, subtract, multiply or divide"
-more_calculation: "Do you want to perform another calculation? (Y to calculate again)"
-good_bye: "Thank you for using the calculator! Good bye"
+en:
+    welcome: "Welcome to Calculator! Please enter your name: "
+    invalid_name: "Make sure to use a valid name."
+    first_number: "What's the first number? "
+    second_number: "What is the second number? "
+    invalid_number: "Hmm... that doesn't look like a valid number"
+    operation: "What operation would you like to perform?
+        Add
+        Subtract
+        Multiply
+        Divide"
+    invalid_operation: "You must choose add, subtract, multiply or divide"
+    more_calculation: "Do you want to perform another calculation? (Y to calculate again)"
+    good_bye: "Thank you for using the calculator! Good bye"
+
+pt:
+    welcome: "Seja bem vindo a calculadora! Vamos começar"
+    invalid_name: "Por favor digitar o seu nome"
+    first_number: "Qual o primeiro numero que voce escolhe?"
+    second_number: "Qual o segundo numero que voce escolhe?"
+    invalid_number: "Voce nao digitou um numero valido"
+    operation: "Qual operacao voce gostaria de realizar?
+        Adicao
+        Subtracao
+        Multiplicacao
+        Divisao"
+    invalid_operation: "Voce precisa escolher uma operacao valida"
+    more_calculation: "Gostaria de realizar outro calculo? (Y para sim)"
+    good_bye: "Obrigada por utilizar a calculadora! Ate breve." 
